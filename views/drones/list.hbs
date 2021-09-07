@@ -1,1 +1,63 @@
-<h2>Available drones</h2>
+<div class="container">
+    <div class="row">
+        <div id="indexTextPadding">
+            <h2 class="text-center margin-text body-text-color">Available drones</h2>
+
+        </div>
+    </div>
+    <div class="row">
+            <div class="box-container row-flex">
+                <div class="box-header content-right">
+                        <br>
+                        <h4>Name:</h4>
+                        <br>
+                </div>
+                <div class="box-header content-center">
+                    <br>
+                    <h4>Number of Propellers</h4>
+                     <br>
+                </div>
+                <div class="box-header content-left">
+                    <br>
+                        <h4>Number of Propellers</h4>
+                    <br>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+         {{#each drones}}
+            <div class="box-container row-flex">
+                <div class="box-content content-right">
+                        <br>
+                        <p>Name:{{name}}</p>
+                        <a href="/drones/{{id}}">Product Id</a>
+                        <br>
+                        <br>
+                        <br>
+                </div>
+                <div class="box-content content-center">
+                    <br>
+                    <p>Number of Propellers:{{propellers}}</p>
+                    <p>Maximum Speed:{{maxSpeed}}</p>
+                     <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="box-content content-left">
+                    <br>
+                        <button><a href="/drones/{{id}}/edit">Edit</a></button>
+                        <form action="/drones/{{id}}/delete" method="POST">
+                            <button type="submit">Delete</button>
+                        </form>
+                    
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                    
+            </div>
+         {{/each}}
+    </div>
+</div>
+    
+

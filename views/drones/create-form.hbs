@@ -1,1 +1,60 @@
-<h2>Create a new drone</h2>
+<div class="container">
+    <div class="row">
+        <div id="indexTextPadding">
+            <h2 class="text-center margin-text body-text-color">Create a new drone</h2>
+
+        </div>
+    </div>
+    <div class="row">
+            <div class="box-container row-flex">
+                <div class="box-header content-right">
+                        <br>
+                        <h4>Name:</h4>
+                        <br>
+                </div>
+                <div class="box-header content-center">
+                    <br>
+                    <h4>Number of Propellers</h4>
+                     <br>
+                </div>
+                <div class="box-header content-left">
+                    <br>
+                        <h4>Number of Propellers</h4>
+                    <br>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+            <div class="box-container row-flex">
+                      <div class="box-content content-right">
+                        <br>
+                        <form method="POST" action="/drones/create">
+                        <label>Name</label>
+                         <input type="text" name="name" />
+                        <br>
+                        <br>
+                        <br>
+                </div>
+                <div class="box-content content-center">
+                    <br>
+                     <label>Propellers</label>
+                     <input type="text" name="propellers" />
+                     <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="box-content content-left">
+                    <br>
+                        <label>Max Speed</label>
+                         <input type="number" name="maxSpeed" />
+                          <button type="submit">Create</button>
+                          </form>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                    
+            </div>
+    </div>
+</div>
+    
